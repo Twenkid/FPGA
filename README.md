@@ -143,3 +143,33 @@ end_module
 
 
 ```
+
+https://www.chipverify.com/verilog/verilog-synthesis
+Synthesis:  Vivado, ...
+Synopsys Design Constraints (SDC) 
+
+# Set the version of the SDC file
+set_version 2.1
+
+# Define the clock
+create_clock -period 10 [get_ports clk]  ; # 100 MHz clock
+https://www.chipverify.com/verilog/verilog-synthesis
+
+
+* Ensure that the Verilog code adheres to synthesizable constructs; not all Verilog features are suitable for synthesis.
+
+* Initial Blocks	- only testbenches, not synthesizable;ignored during synthesis.
+* Delay Constructs	- #10 ... only for simulation.
+* Real Data Types	- The real and time data types are not synthesizable.
+* Fork/Join Constructs
+* Random Functions	- $random, not synthesizable.
+* X and Z States	- unknown (x) and high impedance (z) - not allowed in synthesizable designs.
+* Primitives - Only gate level primitives are supported.
+* Force and Release	- Force and release of data types not supported.
+...
+
+Incremental compilation https://adaptivesupport.amd.com/s/article/696400?language=en_US
+
+Out-Of-Context Synthesis  https://adaptivesupport.amd.com/s/article/694864?language=en_US
+
+Global – Performs a traditional top-down synthesis of the entire design. ... 
