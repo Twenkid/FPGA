@@ -1,6 +1,8 @@
 # FPGA
 CPU, FPGA, HDL, Verilog, VHDL, Icarus, GTKWave, Digital; Design &amp; Verification, System Verilog, testbench, dynamic reconfiguration, Xilinx, Virtex, Spartan, ...
 
+* See Dictionary below
+
 * https://github.com/alfikpl/ao486  486SX full implementation  ... with SoC .. 
 * https://github.com/jaywonchung/Verilog-Harvard-CPU/
 * https://github.com/jaywonchung/Verilog-Harvard-CPU/blob/master/02.%20Multi-cycle%20CPU/ROM.v
@@ -11,16 +13,36 @@ CPU, FPGA, HDL, Verilog, VHDL, Icarus, GTKWave, Digital; Design &amp; Verificati
 * https://github.com/alfikpl/aoR3000/tree/master
 * https://github.com/alfikpl/aoR3000/blob/master/rtl/aoR3000.v
 * https://github.com/alfikpl/ao68000/blob/master/rtl/ao68000.v
+* https://github.com/ultraembedded/cores/blob/master/sdram/rtl/sdram.v
+* https://github.com/ultraembedded/cores/tree/master/usb_device/src_v
+* https://github.com/ultraembedded/cores
+* https://github.com/ultraembedded/riscv?tab=readme-ov-file
+* https://github.com/ultraembedded/riscv/blob/master/doc/riscv_isa_spec.pdf
+* https://github.com/ultraembedded/riscv/blob/master/doc/riscv_privileged_spec.pdf
+* https://github.com/ultraembedded/riscv/tree/master/core/riscv
+* https://github.com/ultraembedded/riscv/blob/master/core/riscv/riscv_core.v
+* https://github.com/ultraembedded/riscv/blob/master/core/riscv/riscv_alu.v
+* https://github.com/ultraembedded/riscv/blob/master/core/riscv/riscv_decoder.v
+* https://github.com/ultraembedded/riscv/blob/master/core/riscv/riscv_regfile.v
+* https://github.com/ultraembedded/riscv/blob/master/core/riscv/riscv_multiplier.v
+* https://github.com/ultraembedded
+* https://github.com/ultraembedded?tab=repositories
+* https://github.com/ultraembedded/core_jpeg
+* https://github.com/ultraembedded/core_jpeg/tree/main/src_v
+* https://github.com/ultraembedded/core_jpeg/blob/main/src_v/jpeg_input.v
+* https://github.com/ultraembedded/biriscv
+* https://github.com/ultraembedded/biriscv/blob/master/src/icache/icache.v
+* https://github.com/ultraembedded/biriscv/blob/master/src/top/riscv_top.v
+...
+  
+### Software, examples
 
-
-https://steveicarus.github.io/iverilog/
-
-https://github.com/hneemann/Digital
-
-biRISC-V - 32-bit dual issue RISC-V CPU: https://github.com/ultraembedded/biriscv
-https://github.com/ultraembedded/biriscv/tree/master/src/core
-https://github.com/ultraembedded/biriscv/blob/master/src/tcm/dport_axi.v
-https://github.com/ultraembedded/cores/blob/master/usb_device/src_v/usbf_fifo.v
+* https://steveicarus.github.io/iverilog/
+* https://github.com/hneemann/Digital - Design & simulate logic
+* biRISC-V - 32-bit dual issue RISC-V CPU: https://github.com/ultraembedded/biriscv
+* https://github.com/ultraembedded/biriscv/tree/master/src/core
+* https://github.com/ultraembedded/biriscv/blob/master/src/tcm/dport_axi.v
+* https://github.com/ultraembedded/cores/blob/master/usb_device/src_v/usbf_fifo.v
 
 
 ### Quick Verilog Samples:
@@ -184,3 +206,25 @@ Incremental compilation https://adaptivesupport.amd.com/s/article/696400?languag
 Out-Of-Context Synthesis  https://adaptivesupport.amd.com/s/article/694864?language=en_US
 
 Global – Performs a traditional top-down synthesis of the entire design. ... 
+
+
+### Interview questions ...
+https://www.chipverify.com/verilog/verilog-interview-questions-set-15#how-is-the-connectivity-established-in-verilog-when-connecting-wires-of-different-widths
+```verilog
+// Causes all unconnected input ports following this to be pulled down to logic 0
+`unconnected_drive pull0
+
+module mod_2341( ... );
+ ...
+endmodule
+
+// Do not apply for rest of the code
+`nounconnected_drive
+```
+
+
+
+### Dictionary
+* LUT - Look-up table, BRAM, DSP, LUTRAM ...
+* FF, FFs - Filp-flops; LU, LE - logic units, logic elements ... e.g. Virtex ... 114000 ... (can fit 486SX with Sound card and periphery; the CPU - about 37K, ... Sound about so or more, ... in total about 90 ... see ao486 )
+* Clock dividers with FFs and PLLs: PLL stands for Phase-Locked Loop. It is a closed-loop feedback control system used to generate an output signal whose phase is related to the phase of an input signal .. Phase Detector (or Phase Comparator): ... Loop Filter: This is typically a low-pass filter ... Voltage-Controlled Oscillator (VCO): 
