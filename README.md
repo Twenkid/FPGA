@@ -33,19 +33,45 @@ CPU, FPGA, HDL, Verilog, VHDL, Icarus, GTKWave, Digital; Design &amp; Verificati
 * https://github.com/ultraembedded/biriscv
 * https://github.com/ultraembedded/biriscv/blob/master/src/icache/icache.v
 * https://github.com/ultraembedded/biriscv/blob/master/src/top/riscv_top.v
+
+
 ...
   
 ### Software, examples
 
-* https://steveicarus.github.io/iverilog/
+* https://steveicarus.github.io/iverilog/     https://steveicarus.github.io/iverilog/usage/simulation.html
 * https://github.com/hneemann/Digital - Design & simulate logic
 * biRISC-V - 32-bit dual issue RISC-V CPU: https://github.com/ultraembedded/biriscv
 * https://github.com/ultraembedded/biriscv/tree/master/src/core
 * https://github.com/ultraembedded/biriscv/blob/master/src/tcm/dport_axi.v
 * https://github.com/ultraembedded/cores/blob/master/usb_device/src_v/usbf_fifo.v
 
+### Learn Verilog
+* https://www.chipverify.com/verilog/verilog-interview-questions-set-2 (etc. 3,4,5...) 
+https://www.chipverify.com/verilog/verilog-define-macros  
+https://www.chipverify.com/verilog/verilog-vcd  
+https://www.chipverify.com/verilog/verilog-dump-vcd  
+https://www.chipverify.com/verilog/verilog-interview-questions-set-14  
+https://www.chipverify.com/verilog/verilog-interview-questions-set-1  
+https://www.chipverify.com/  
+https://www.chipverify.com/verilog/verilog-examples  
+https://www.chipverify.com/verilog/verilog-single-port-ram
+
+https://github.com/1sand0s-git/8bit_CPU
+https://github.com/1sand0s-git/8bit_CPU/blob/main/QA_Main.v
+https://github.com/1sand0s-git/FPGABasics/blob/main/Episode%20008%20-%20ROMs%20and%207%20Segment%20Displays/QA_7Seg.mem
+https://austinmorlan.com/posts/8bit_breadboard_fpga/
+https://code.austinmorlan.com/austin/2021-8bit-cpu-fpga
+https://code.austinmorlan.com/austin/2021-8bit-cpu-fpga/src/branch/master/code
+https://code.austinmorlan.com/austin/2021-8bit-cpu-fpga/src/branch/master/code/cpu.v
+
+https://steveicarus.github.io/iverilog/usage/simulation.html
+
+http://eprints.utar.edu.my/5966/1/David_Ngu_Teck_Joung_21AGM06719.pdf   DESIGN AND SIMULATE RISC-V PROCESOR USING VERILOG, DAVID NGU TECK JOUNG
+
 
 ### Quick Verilog Samples:
+
 
 ```Verilog
 `define ALU_NONE                                4'b0000
@@ -222,9 +248,14 @@ endmodule
 `nounconnected_drive
 ```
 
+### Designing 8-bit CPU etc. Youtube ... 
+
+Designing an 8 bit CPU - Episode 1, 1s and 0s, 2,03 хил. абонати, 1490 показвания  29.04.2022 г.
 
 
 ### Dictionary
 * LUT - Look-up table, BRAM, DSP, LUTRAM ...
 * FF, FFs - Filp-flops; LU, LE - logic units, logic elements ... e.g. Virtex ... 114000 ... (can fit 486SX with Sound card and periphery; the CPU - about 37K, ... Sound about so or more, ... in total about 90 ... see ao486 )
-* Clock dividers with FFs and PLLs: PLL stands for Phase-Locked Loop. It is a closed-loop feedback control system used to generate an output signal whose phase is related to the phase of an input signal .. Phase Detector (or Phase Comparator): ... Loop Filter: This is typically a low-pass filter ... Voltage-Controlled Oscillator (VCO): 
+* Clock dividers with FFs and PLLs: PLL stands for Phase-Locked Loop. It is a closed-loop feedback control system used to generate an output signal whose phase is related to the phase of an input signal .. Phase Detector (or Phase Comparator): ... Loop Filter: This is typically a low-pass filter ... Voltage-Controlled Oscillator (VCO):
+* The AXI (Advanced eXtensible Interface); Tightly Coupled Memory (TCM) module.
+
