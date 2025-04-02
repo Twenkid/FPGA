@@ -1,6 +1,16 @@
 # FPGA
 CPU, FPGA, HDL, Verilog, VHDL, Icarus, GTKWave, Digital; Design &amp; Verification, System Verilog, testbench, dynamic reconfiguration, Xilinx, Virtex, Spartan, ...
 
+* https://github.com/alfikpl/ao486  486SX full implementation  ... with SoC .. 
+* https://github.com/jaywonchung/Verilog-Harvard-CPU/
+* https://github.com/jaywonchung/Verilog-Harvard-CPU/blob/master/02.%20Multi-cycle%20CPU/ROM.v
+* https://github.com/jaywonchung/Verilog-Harvard-CPU/tree/master/06.%20Tournament%20Prediction%20CPU
+* https://github.com/jaywonchung/Verilog-Harvard-CPU/blob/master/02.%20Multi-cycle%20CPU/Design.pdf
+* https://github.com/alfikpl/aoOCS
+* https://github.com/alfikpl/aoR3000
+* https://github.com/alfikpl/aoR3000/tree/master
+* https://github.com/alfikpl/aoR3000/blob/master/rtl/aoR3000.v
+* https://github.com/alfikpl/ao68000/blob/master/rtl/ao68000.v
 
 
 https://steveicarus.github.io/iverilog/
@@ -11,6 +21,7 @@ biRISC-V - 32-bit dual issue RISC-V CPU: https://github.com/ultraembedded/birisc
 https://github.com/ultraembedded/biriscv/tree/master/src/core
 https://github.com/ultraembedded/biriscv/blob/master/src/tcm/dport_axi.v
 https://github.com/ultraembedded/cores/blob/master/usb_device/src_v/usbf_fifo.v
+
 
 ### Quick Verilog Samples:
 
