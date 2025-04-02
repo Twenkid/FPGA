@@ -206,16 +206,16 @@ end_module
 https://www.chipverify.com/verilog/verilog-synthesis
 Synthesis:  Vivado, ...
 Synopsys Design Constraints (SDC) 
-
+```
 # Set the version of the SDC file
 set_version 2.1
 
 # Define the clock
 create_clock -period 10 [get_ports clk]  ; # 100 MHz clock
 https://www.chipverify.com/verilog/verilog-synthesis
+```
 
-
-* Ensure that the Verilog code adheres to synthesizable constructs; not all Verilog features are suitable for synthesis.
+### Ensure that the Verilog code adheres to synthesizable constructs; not all Verilog features are suitable for synthesis.
 
 * Initial Blocks	- only testbenches, not synthesizable;ignored during synthesis.
 * Delay Constructs	- #10 ... only for simulation.
