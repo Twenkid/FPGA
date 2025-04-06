@@ -1,6 +1,10 @@
 # FPGA
 CPU, FPGA, HDL, Verilog, VHDL, Icarus, GTKWave, Digital; Design &amp; Verification, System Verilog, testbench, dynamic reconfiguration, Xilinx, Virtex, Spartan, ...
 
+* See also the designs in: https://github.com/Twenkid/ASIC-FPGA-Verilog
+* A DSP block and LRU Cache (2008), pipelines with registers for delaying and synchronizing the signals
+
+...
 * See Dictionary below
 
 * https://github.com/alfikpl/ao486  486SX full implementation  ... with SoC .. 
