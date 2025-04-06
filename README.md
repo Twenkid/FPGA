@@ -3,6 +3,45 @@ CPU, FPGA, HDL, Verilog, VHDL, Icarus, GTKWave, Digital; Design &amp; Verificati
 
 * See also the designs in: https://github.com/Twenkid/ASIC-FPGA-Verilog
 * A DSP block and LRU Cache (2008), pipelines with registers for delaying and synchronizing the signals
+https://github.com/Twenkid/ASIC-FPGA-Verilog/tree/main/DataCacheTag
+
+
+https://github.com/Twenkid/ASIC-FPGA-Verilog/blob/main/DataCacheTag/cache0.txt   
+https://github.com/Twenkid/ASIC-FPGA-Verilog/blob/main/DataCacheTag/drawtiming-commands.txt   
+
+Generating time diagrams from a specification of buses and events with drawtiming.
+
+<img src="https://github.com/Twenkid/ASIC-FPGA-Verilog/blob/main/DataCacheTag/cache0.gif">  
+
+```
+           CLOCK=0, TICK="X", RESET=0, ADDR=X, RD_WR_B=0, VALID=0, RA=X, RE=0, Q=X, TAG_0_T4=X, TAG_0_T5=X, EQ_0_T4=X, WRITE_HIT_T5 =0, WRITE_MISS_T5=0, READ_HIT_T5=0, READ_MISS_T5=0, REPLACE = 0, WE=X, WA=X, DATA_IN=X, ADDR_IN_T5=X.
+	   CLOCK=1.
+	   CLOCK=0.
+	   CLOCK=1, TICK="0", RESET=1, RD_WR_B=1, VALID=1, ADDR = A0.
+           CLOCK=0.
+           CLOCK=1, TICK="1", ADDR = A1.
+           CLOCK=0.
+           CLOCK=1, TICK="2", RA="A0", RE=1, ADDR = A2.
+           CLOCK=0.
+           CLOCK=1, TICK="3", RE=1, RA="A1", Q="Q0", ADDR = A3.
+           CLOCK=0.
+           CLOCK=1, TICK="4", RA="A2", Q="Q1", ADDR = A4, TAG_0_T4 = X, EQ_0_T4=0.
+           CLOCK=0.
+           CLOCK=1, TICK="5", RA="A4", Q="Q3", ADDR = A6, WA="Tg_0", WE=1, DATA_IN="D0", ADDR_IN_T5=A0, TAG_0_T4 = X, TAG_0_T5=X, WRITE_HIT_T5=0, WRITE_MISS_T5=0, READ_HIT_T5=0, READ_MISS_T5=1, REPLACE = 1.
+           CLOCK=0.
+           CLOCK=1, TICK="6", RA="A5", Q="Q4", ADDR = A7, WA="Tg_1", WE=1, DATA_IN="D1", ADDR_IN_T5=A1, TAG_0_T4 = TG_T2.
+           CLOCK=0.
+           CLOCK=1, TICK="7", RA="A6", Q="Q5", ADDR = A8, WA="0", WE=0, DATA_IN="X", ADDR_IN_T5=A2, TAG_0_T4 = TG_T3.
+           CLOCK=0.
+           CLOCK=1, TICK="8", RA="A7", Q="Q6", ADDR = A9, WA="0", WE=0, DATA_IN="X", ADDR_IN_T5=A3, TAG_0_T4 = TG_T4.
+           CLOCK=0.
+
+
+
+ drawtiming --output out2.gif newc
+ drawtiming -w40 -c30 -f12 --output out3.gif newc
+ drawtiming -w40 -c30 -f12 --output cache0.gif cache0.txt
+```
 
 ...
 * See Dictionary below
