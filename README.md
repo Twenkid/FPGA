@@ -46,6 +46,29 @@ Generating time diagrams from a specification of buses and events with drawtimin
 ...
 * See Dictionary below
 
+* **Various Materials for study:** (To do: add the others reviewed, not listed yet)
+
+* v586 - Pentium instruction set, but without FPU (emulation, 0.125 MFLOPS), 17 DMIPS at 100 MHz - https://opencores.org/projects/v586
+```
+ CORE DETAILS:
+* Features:
+- 586 instruction set implementation, conditional mov added.
+- MMU with protected and paged mode supported with 4KB page size.
+- TLB 16 entries.
+- CPUID (0x0617)and CMPXCHG8B are implemented, with conditional mov.
+- pre-fetch queue is 32 bytes long.
+- 16kB Instruction cache, 16kB Data cache, 128bit loaded at once into prefetch queue.
+- Hardware multiplication and Division.
+- 32 bit AXI4 interface with bursts.
+- ~17DMIPS or ~30500 dhrystones v2.1 @ 100MHz with -O2 option under gcc 4.8, no register.
+* Known limitations:
+- no FPU, but emulation mechanism with "device not available" fault #7, whetsone gives 0.125 MIPS score with emulation.
+- some instruction are missing, but not used in Linux/GCC : like the decimal adjust.
+- Protected and Paged mode are supported, there are some limitation in the protected mode implementation like segment limit.
+- bits and features for MSR/TSC/PAE/NX bit not implemented.
+- MMU page size is 4KB , no PSE / PSE36 bit supported.
+- Segment prefix in protected mode are the default or GS descriptor, FS prefix in protected mode is not used in Linux 32b.
+```
 * https://github.com/alfikpl/ao486  486SX full implementation  ... with SoC .. 
 * https://github.com/jaywonchung/Verilog-Harvard-CPU/
 * https://github.com/jaywonchung/Verilog-Harvard-CPU/blob/master/02.%20Multi-cycle%20CPU/ROM.v
