@@ -1,4 +1,9 @@
-# FPGA
+# FPGA - DIGITAL DESIGN - CPU DESIGN ...
+
+* News, 9.5.2025: After an initial focued and very quick refresh and study this direction was put on hold, but the first embryo of the target "CPU project" was completed in the night of 7.5.2025. For now it will be educational with many versions, starting with 8-bit, 16-bit, 32-bit ... and extending to more complex logic and architecture. (As long as I could spend time on this too.). Eventually it will be connected with Vsy/Вседържец. 
+...
+
+  
 CPU, FPGA, HDL, Verilog, VHDL, Icarus, GTKWave, Digital; Design &amp; Verification, System Verilog, testbench, dynamic reconfiguration, Xilinx, Virtex, Spartan, ...
 
 * See also the designs in: https://github.com/Twenkid/ASIC-FPGA-Verilog
