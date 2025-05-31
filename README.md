@@ -131,12 +131,24 @@ https://www.chipverify.com/verilog/verilog-single-port-ram
 https://github.com/1sand0s-git/8bit_CPU
 https://github.com/1sand0s-git/8bit_CPU/blob/main/QA_Main.v
 https://github.com/1sand0s-git/FPGABasics/blob/main/Episode%20008%20-%20ROMs%20and%207%20Segment%20Displays/QA_7Seg.mem
+
+### Austin Morlan's projects
+
+https://austinmorlan.com/
 https://austinmorlan.com/posts/8bit_breadboard_fpga/
 https://code.austinmorlan.com/austin/2021-8bit-cpu-fpga
 https://code.austinmorlan.com/austin/2021-8bit-cpu-fpga/src/branch/master/code
 https://code.austinmorlan.com/austin/2021-8bit-cpu-fpga/src/branch/master/code/cpu.v
 
-https://steveicarus.github.io/iverilog/usage/simulation.html
+https://code.austinmorlan.com/austin/2023-fpga-computer/src/branch/master/src/sap3/reg_file.v
+https://code.austinmorlan.com/austin/2023-fpga-computer/src/branch/master/src/sap3/controller.v
+https://austinmorlan.com/posts/fpga_computer_sap3/#instruction-decoding
+https://austinmorlan.com/posts/fpga_computer_sap3/
+https://austinmorlan.com/posts/fpga_computer_sap2/
+https://austinmorlan.com/posts/fpga_computer_sap1/
+
+
+* https://steveicarus.github.io/iverilog/usage/simulation.html
 
 http://eprints.utar.edu.my/5966/1/David_Ngu_Teck_Joung_21AGM06719.pdf   DESIGN AND SIMULATE RISC-V PROCESOR USING VERILOG, DAVID NGU TECK JOUNG
 
